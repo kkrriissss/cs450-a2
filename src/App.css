@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Black background like last time cause I dont like the whole thing being white, and its hard to format*/
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  background-color: white;
+  max-width: 900px;
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+  margin: 0px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+  border-bottom: 4px solid #FFD700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-right {
+  text-align: left;
+  margin-top: 0;
+}
+
+.header-right p {
+  margin: 3px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.header-right p a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.header-right p a:hover {
+  text-decoration: underline;
+}
+
+.header h1 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header h2 {
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+/*Flexbox for alligneing*/
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 20px 40px;
+  border-bottom: 1px solid #333333;
+}
+
+.section-wrapper:last-child {
+  border-bottom: none;
+}
+
+
+.section-title {
+  width: 30%;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.section-content {
+  width: 70%;
+  font-size: 14px;
+  margin: 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/*personal profile*/
+.profile p {
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5;
+  padding-top: 0;
+}
+
+/*work*/
+.work-experience h4 {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.work-experience p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/*skills*/
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px; 
+  padding: 0; 
+  margin: 0;
+}
+.skills ul li {
+  list-style-type: none;
+  font-size: 14px;
+  text-align: left;
+  padding: px 0;
+}
+
+
+/*education*/
+.education {
+  font-size: 14px;
+}
+
+.education h4 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.education p {
+  margin: 2px 0;
+}
+
+.education div {
+  margin-bottom: 10px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #333333;
+  margin: 10px 0;
 }
