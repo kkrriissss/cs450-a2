@@ -7,7 +7,6 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 
 function App() {
-  // State object to store the resume data
   const [resumeData] = useState({
     name: "Zh Rimel",
     title: "Data Scientist",
